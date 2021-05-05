@@ -39,7 +39,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
@@ -52,23 +52,23 @@
 
   <main>
     <div class="container">
-    <?php  foreach ($database as $disco) { ?>
+      <?php  foreach ($database as $disco){ ?>
       <div class="album">
         <div class="cover-box">
-          <img src="<?php echo $disco["poster"] ?>">
+          <img src="<?php echo $disco["poster"]?>">
         </div>
         <div class="title-box flex">
-          <h2><?php echo $disco["title"] ?></h2>
+          <h2><?php echo $disco["title"]?></h2>
         </div>
         <div class="author-box flex">
-          <h3><?php echo $disco["author"] ?></h3>
+          <h3><?php echo $disco["author"]?></h3>
         </div>
         <div class="year-box flex">
-          <h3><?php echo $disco["year"] ?>}</h3>
+          <h3><?php echo $disco["year"]?></h3>
         </div>
       </div>
+      <?php } ?>
     </div>
-    <?php } ?>
   </main>
 
 
