@@ -1,6 +1,6 @@
 
 <!-- includo il Database Dischi  -->
-<?php include 'partials/database.php';?>
+<?php include __DIR__ . '/partials/database.php';?>
 
 <!-- /includo il Database Dischi  -->
 
@@ -42,7 +42,7 @@
 
 <body>
 
-  <?php include 'partials/template/header.php';?>
+  <?php include __DIR__ . '/partials/template/header.php';?>
 
   <main>
     <div class="container">

@@ -43,14 +43,14 @@
 
 <body>
 
-  <?php include 'partials/template/header.php';?>
+  <?php include __DIR__ . '/partials/template/header.php';?>
 
   <!-- root per VUE JS -->
   <div id="root">
 
     <main>
       <div class="container">
-        <div class="album" v-if="(album.genre==chosenGenre) || (chosenGenre=='All')" v-for="album in albums">
+        <div class="album" v-for="album in albums">
           <div class="cover-box">
             <img :src="album.poster" :alt="album.title">
           </div>
